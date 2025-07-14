@@ -1,0 +1,116 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+/* Heading Styles */
+h1 {
+    color: #333;
+    font-size: 28px;
+}
+
+/* Cart Items Container */
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+/* Individual Cart Item */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cart-item h3 {
+    flex: 1;
+    margin: 0 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.cart-item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cart-item button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.cart-item button:hover {
+    background-color: #cc0000;
+}
+
+/* Total Price */
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #222;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:nth-child(1) { /* Clear Cart */
+    background-color: #ff9800;
+    color: white;
+}
+
+button:nth-child(2) { /* Proceed to Payment */
+    background-color: #28a745;
+    color: white;
+}
+
+button:nth-child(1):hover {
+    background-color: #e68900;
+}
+
+button:nth-child(2):hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cart-item img {
+        margin-bottom: 10px;
+    }
+}
